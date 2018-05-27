@@ -1,0 +1,11 @@
+#title {
+  font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+}
+#title_ {
+  background-image: url("https://i.pinimg.com/originals/d2/50/9b/d2509b6eadc8975128e0e3223c7c7362.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
