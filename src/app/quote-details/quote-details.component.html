@@ -1,8 +1,12 @@
+<div>
+
 
 <p>{{quote.quote}}</p>
 <button (click) = 'quoteDelete(true)'> Delete Quote </button>
 <p>This quote will be outdated in {{quote.completeDate|dateCount}} days</p>
-<button (click)="likes(id)">likes</button>
+<p>~{{quote.author}}~</p>
+<button (click)="likes()" style="float:left;" style="color:blue"><i class="fas fa-thumbs-up"></i></button>
 <p>{{quote.likes}}</p>
-<button (click)="dislikes(id)">dislikes</button>
+<button (click)="dislikes()" style="float:left;" style="color:red"><i class="fas fa-thumbs-down"></i></button>
 <p>{{quote.dislikes}}</p>
+</div>

@@ -1,6 +1,19 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 .container-fluid {
   /* text-align: center; */
 }
 li {
  /* text-align: center; */
+}
+#dream{
+  background-color:#FADA5E;
+  float: right;
+  text-align: center;
+  margin-right: 120px;
+  padding-right: 50px;
+  padding-left: 10px;
+
+}
+.green{
+  float: left;
 }

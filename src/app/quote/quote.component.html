@@ -1,13 +1,21 @@
-<h1 style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">Quotes on quotify</h1>
+<h1 style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">Publish Your Quote</h1>
 <hr>
+<div>
+  <div class="green">
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
+
 <ul>
+
+  <div id="dream">
   <div class="container-fluid" style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">
+    <h1 style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">Quotes on quotify</h1>
+
     <div *ngFor='let quote of quotes;let i = index'>
-        <li >{{quote.name}} made this quote</li>
-        <button  (click)='toogleDetails(i)'>Show Quote Administered</button>
+        <li >{{quote.name}} published this quote</li>
+        <button  (click)='toogleDetails(i)'><img src="https://media.giphy.com/media/y7yTj0unqvxSw/giphy.gif" style="width:70px;"></button>
        <app-quote-details *ngIf="quote.showquote" [quote]='quote' (isComplete)= 'quoteDelete($event,i)'></app-quote-details>
     </div>
 </div>
+</div>
 </ul>
-  <p *ngIf='quotes.length > 5'>You have too many Quotes</p>
