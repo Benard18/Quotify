@@ -1,6 +1,8 @@
 
 <p>{{quote.quote}}</p>
 <button (click) = 'quoteDelete(true)'> Delete Quote </button>
-<p>This goal will be completed in {{quote.completeDate|dateCount}} days</p>
+<p>This quote will be outdated in {{quote.completeDate|dateCount}} days</p>
 <button (click)="likes(id)">likes</button>
 <p>{{quote.likes}}</p>
+<button (click)="dislikes(id)">dislikes</button>
+<p>{{quote.dislikes}}</p>

@@ -15,12 +15,12 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  likes(id) {
-    this.likes[id].like();
+  likes() {
+    this.quote.like();
   }
 
-  dislikes(id) {
-    this.dislikes[id].dislike();
+  dislikes() {
+    this.quote.dislike();
   }
   constructor() { }
 

@@ -1,11 +1,13 @@
-<h1>Quotes on quotify</h1>
+<h1 style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">Quotes on quotify</h1>
 <hr>
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 <ul>
+  <div class="container-fluid" style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">
     <div *ngFor='let quote of quotes;let i = index'>
-        <li >{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
+        <li >{{quote.name}} made this quote</li>
+        <button  (click)='toogleDetails(i)'>Show Quote Administered</button>
        <app-quote-details *ngIf="quote.showquote" [quote]='quote' (isComplete)= 'quoteDelete($event,i)'></app-quote-details>
     </div>
+</div>
 </ul>
   <p *ngIf='quotes.length > 5'>You have too many Quotes</p>
