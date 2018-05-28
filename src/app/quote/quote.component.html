@@ -10,12 +10,12 @@
   <div id="dream">
   <div class="container-fluid" style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">
     <h1 style="font-family: 'PT Sans Narrow', sans-serif;font-family: 'Roboto Slab', serif;">Quotes on quotify</h1>
-
-    <div *ngFor='let quote of quotes;let i = index'>
+    <div *ngFor='let quote of quotes;let i = index' id="weddy">
         <li >{{quote.name}} published this quote</li>
         <button  (click)='toogleDetails(i)'><img src="https://media.giphy.com/media/y7yTj0unqvxSw/giphy.gif" style="width:70px;"></button>
        <app-quote-details *ngIf="quote.showquote" [quote]='quote' (isComplete)= 'quoteDelete($event,i)'></app-quote-details>
     </div>
 </div>
 </div>
+
 </ul>
