@@ -1,8 +1,12 @@
-# Quotify
+# Quotify Application
+This is an application based on publishing Quotes and Editing Quotes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+##Technologies Used.
+1.This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+2.css/bootstrap.
+3.HTML5
 
-## Development server
+##After Cloning the Repo
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
